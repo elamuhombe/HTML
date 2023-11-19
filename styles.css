@@ -1,0 +1,107 @@
+/* UNIVERSAL STYLES */
+/* Sets the margin and padding for all elements to 0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BODY STYLES */
+body{
+    margin-top: 25px;
+    text-align: center;/* centering elements inside the body element */
+    font-family: 'Roboto';
+}
+
+
+/* HEADER STYLES */
+/*aligning the logo to the left and changing font properties */
+
+.logo, .nav-links{
+    display: inline-block;
+}
+.logo{
+  
+    font-family: 'Precious';
+    font-size: 28px;
+    font-weight: 400;
+    margin-right: 10px;
+    
+}
+
+
+
+/* styling for navigation menu item */
+nav ul li{
+    margin-left: 20px;
+}
+
+.nav-links ul{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+}
+/* removes underlines from links */
+.nav-links a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 300;
+}
+
+/*hero section styles */
+.hero-container{
+    margin-bottom: 40px;
+}
+
+h1{
+    margin-top: 20px;
+    font-size:40px;
+    font-weight:600;
+    color: #121212;
+    
+}
+.full-stack-text{
+    font-size: 28px;
+    font-weight: 300;
+    color: #2980b9;
+}
+.hero-tagline{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: #6b6868;
+}
+
+.profile-photo{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #6b6868;
+    border-radius: 50%;
+
+}
+.hero-section-data {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section-data img {
+    margin-right: 10px;
+}
+
+/* ABOUT SECTION */
+.about-container{
+    line-height: 1.5rem;
+ 
+}
+
+
+
+
+
+
+/* FOOTER STYLES */

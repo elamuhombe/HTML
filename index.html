@@ -4,80 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/precious');
+</style>
+
 <body>
     <!--header-section-->
     <header>
         <h1 class="logo">Elaine</h1>
         <nav class="nav-links">
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#resume">resume</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>   
-        </nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#resume">resume</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>   
+            </nav>
     </header>
-    <!--This is the hero section of the web page-->
+    
+    <main>
+        <!--This is the hero section of the web page-->
     <section id="hero-section">
         <div class="hero-container">
             <!--Welcome message and introduction-->
-            <h1>Hello, I am Elaine Muhombe and I am a full stack JS developer</h1>
-            <p class="hero-section-tagline">Bringing Your Vision to Life, One Line of Code at a Time<br>
+            <h1>Hello, I am Elaine Muhombe </h1>
+            <p class="full-stack-text">A Full Stack JS Developer</p>
+            <p class="hero-tagline">Bringing Your Vision to Life, One Line of Code at a Time<br>
                 From concept to execution, I specialize in turning your web development dreams into 
                 reality with precision and creativity.
             </p>
            
-            <img src="photos/elaine.jpg" alt="Elaine-Muhombe-Profile-Picture" width="300px" height="300px">
+            <img src="photos/elaine.jpg" alt="Elaine-Muhombe-Profile-Picture" class="profile-photo">
 
             <!--Professional experience data-->
             <div class="hero-section-data">
                 <!--Icon and duration of professional experience-->
-                <p><img src="photos/work.svg" alt="professional-experience-icon" width="30px" height="30px">
-                    <strong><em>Professional Experience:</em></strong>
-                    1 year
-                </p>
+                <img src="photos/work.svg" alt="professional-experience-icon" width="30px" height="30px">
+                    <p><em>Professional Experience:</em>1 year</p>
+                
             </div>
             <!--Skills data-->
             <div class="hero-section-data">
                 <!--Icon and list of skills-->
-                <p><img src="photos/skills.png" alt="skills-icon" width="30px" height="30px">
-                    <strong><em>Skills:</em></strong>Full-Stack JS
-                </p>
+                <img src="photos/skills.png" alt="skills-icon" width="30px" height="30px">
+                    <p><em>Skills:</em>Full-Stack JS</p>
+                
             </div>
             <!--Portfolio highlights data-->
             <div class="hero-section-data">
                 <!--Icon and notable projects-->
-                <p><img src="photos/portfolio.svg" alt="portfolio-icon" width="30px" height="30px">
-                    <strong><em>Portfolio Highlights:</em></strong>
-                    Task scheduler, Real-time chat, and E-commerce app
+                <img src="photos/portfolio.svg" alt="portfolio-icon" width="30px" height="30px">
+                    <p><em>Portfolio Highlights:</em>
+                        Task scheduler, Real-time chat, and E-commerce app</p>
                 </p>
             </div>
             <!--Education data-->
             <div class="hero-section-data">
                 <!--Icon and educational details-->
-                <p><img src="photos/education.svg" alt="education-icon" width="30px" height="30px">
-                    <strong><em>Education:</em></strong>
-                    Bachelors Degree
-                </p>
+                <img src="photos/education.svg" alt="education-icon" width="30px" height="30px">
+                    <p><em>Education:</em>Bachelors Degree</p>
             </div>
-            <!--Contact details-->
-            <div class="hero-section-data">
-                <!--Icons and contact information-->
-                <p><img src="photos/phone.svg" alt="phone-icon" width="30px" height="30px">
-                    +254 701 217 788
-                </p>
-            </div>
-            <div class="hero-section-data">
-                <p><img src="photos/gmail.svg" alt="email-icon" width="30px" height="30px">
-                    emuhombe@gmail.com
-                </p>
-            </div>
-            <div class="hero-section-data">
-                <p><img src="photos/location.svg" alt="location-icon" width="30px" height="30px">
-                    Kisumu, Kenya
-                </p>
-            </div>
+            
             <!--Connect button-->
             <button id="btn-connect" name="btn-connect" class="btn-connect">
                 Connect With Me
@@ -87,6 +78,7 @@
     <hr width="80%">
     <!-- About Me Section -->
     <section id="about">
+      <div class="about-container">
         <h2>About Me</h2>
         <!-- Introduction -->
         <div class="about-section">
@@ -98,13 +90,13 @@
         </div>
         <!-- Professional Experience -->
         <div class="about-section">
-            <h3>Professional Experience</h3>
+            <p>Professional Experience</p>
             <p>With 1 year of professional experience, I have been actively involved in various projects, contributing 
                 to the success of my clients through strategic web development solutions.</p>
         </div>
         <!-- Skills -->
         <div class="about-section">
-            <h3>Skills</h3>
+            <p class="skills">Skills</p>
             <p>My skills include:</p>
             <ul class="skills-list">
                 <li>Full-Stack JS</li>
@@ -142,7 +134,10 @@
                 relaxation to my life.</p>
         </div>
     </section>
-    <!--aside-menu-->
+
+      </div>
+        
+   
     <hr width="80%">
     <!--work section-->
     <section id="work">
@@ -210,29 +205,22 @@
         <h2>Contact Form</h2>
        <!-- Contact Form -->
         <form id="contact-form" class="contact-form">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required><br>
+            <div>
+                <label for="firstName">Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required><br>
-
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-
-            <!-- Purpose of the form -->
-            <label for="purpose">Purpose of Contact</label>
-            <select id="purpose" name="purpose" required>
-                <option value="" disabled selected>Select a purpose</option>
-                <option value="inquiry">General Inquiry</option>
-                <option value="collaboration">Collaboration Opportunity</option>
-                <option value="job">Job Opportunity</option>
-            </select>
+            
 
             <!-- Submit Button -->
             <button type="submit">Send Message</button>
@@ -241,6 +229,8 @@
 
     <hr width="80%">
 
+    </main>
+    
     <!-- Footer Section -->
     <footer>
         &copy; 2023 by Elaine Muhombe
