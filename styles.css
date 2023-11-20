@@ -9,6 +9,7 @@
 /* BODY STYLES */
 body{
     margin-top: 25px;
+    margin-left: 25px;
     text-align: center;/* centering elements inside the body element */
     font-family: 'Roboto';
 }
@@ -51,7 +52,7 @@ nav ul li{
 
 /*hero section styles */
 .hero-container{
-    margin-bottom: 40px;
+    margin:40px;
 }
 
 h1{
@@ -73,6 +74,10 @@ h1{
     color: #6b6868;
 }
 
+.hero-profile{
+    display: inline-block;
+}
+
 .profile-photo{
     width: 250px;
     height: 250px;
@@ -80,28 +85,139 @@ h1{
     border-radius: 50%;
 
 }
-.hero-section-data {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
+.hero-section-data{
+    display: inline;
+}
 .hero-section-data img {
     margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.section-data-text{
+    margin-right: 2px;
+}
+button{
+    margin-top: 15px;
+    padding: 10px;
+    background-color:#2980b9;
+    border:#2980b9;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 1.1em;
+    cursor: pointer;
 }
 
-/* ABOUT SECTION */
-.about-container{
-    line-height: 1.5rem;
+button:hover{
+    background-color: #6b6868;
+}
+hr{
+    width: 80%;
+   margin: auto;
+   margin-top: 30px;
+    
  
 }
 
+.about-container,
+.work-container,
+.resume-container,
+.contact-container{
+    margin-top: 16px;
+   padding-top: 50px;
+}
+.about-me,
+.work,
+.my-resume{
+    display: inline;
+    font-size: 1.2em;
+}
+.about-me-title,
+.work-title,
+.resume-title,
+.contact-title
+{
+    margin: auto ;
+    margin-bottom: 20px;
+    font-size: 2em;
+    border: 2px solid #333; /* Border color (adjust as needed) */
+    padding: 10px; /* Adjust the padding as needed */
+    display: inline-block; /* Ensures the container only takes up as much width as necessary */
+
+    
+}
+
+.about-me img{
+    
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.about-me-text,
+.resume-text,
+.contact-text{
+    margin-top: 25px;
+}
+
+/*WORK SECTION */
 
 
+/* RESUME SECTION */
 
+
+/* CONTACT SECTION */
+form {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: lightgray;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 300px;
+    padding: 10px; /* Adjust padding for spacing inside the elements */
+    margin-bottom: 16px; /* Add margin for spacing between elements */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Hover and Focus States */
+  input:hover,
+  select:hover,
+  textarea:hover,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Validation Styles */
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border-color: #dc3545;
+  }
+  
 
 
 /* FOOTER STYLES */
+footer{
+    padding: 20px;
+}
+
+.social-media-icons img{
+    padding-top: 15px;
+    width: 30px;
+    height: 30px;
+}
