@@ -1,223 +1,243 @@
-/* UNIVERSAL STYLES */
-/* Sets the margin and padding for all elements to 0*/
-*{
-    margin: 0;
-    padding: 0;
+/* UNIVERSAL STYLING */
+/* Removes the default marging and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-/* BODY STYLES */
-body{
-    margin-top: 25px;
-    margin-left: 25px;
-    text-align: center;/* centering elements inside the body element */
-    font-family: 'Roboto';
+/* BODY STYLING */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
 }
 
-
-/* HEADER STYLES */
-/*aligning the logo to the left and changing font properties */
-
-.logo, .nav-links{
-    display: inline-block;
+/* HEADER STYLINE */
+header {
+  margin-bottom: 5px;
+  padding: 20px;
+  background-color: #454545;
+  color: #ffffff;
 }
-.logo{
-  
-    font-family: 'Precious';
-    font-size: 28px;
-    font-weight: 400;
-    margin-right: 10px;
-    
+/* Logo styles */
+.logo {
+  display: inline;
+  float: left;
+  font-family: "Precious";
+  font-size: 38px;
 }
-
-
-
-/* styling for navigation menu item */
-nav ul li{
-    margin-left: 20px;
+/* Displaying the nav bar as an inline element */
+.nav-bar {
+  display: inline;
 }
-
-.nav-links ul{
-    list-style: none;
+/* Displaying the links in the nav bar in a row */
+/* Creating spaces between each link item */
+.nav-bar ul li {
+  display: inline;
+  padding: 10px;
 }
-.nav-links li{
-    display: inline-block;
-}
-/* removes underlines from links */
-.nav-links a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: 300;
+/* Link styling */
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-/*hero section styles */
-.hero-container{
-    margin:40px;
+a:hover {
+  text-decoration: underline;
+}
+/* Creating a bottom order for the active link */
+nav .active {
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
 }
 
-h1{
-    margin-top: 20px;
-    font-size:40px;
-    font-weight:600;
-    color: #121212;
-    
+/* MAIN SECTION STYLING */
+/* --hero Section-- */
+.greeting {
+  font-size: 40px;
 }
-.full-stack-text{
-    font-size: 28px;
-    font-weight: 300;
-    color: #2980b9;
+/* job title styling */
+.job-title {
+  font-size: 28px;
+  color: #57adbf;
 }
-.hero-tagline{
-    margin-top: 16px;
-    font-size: 16px;
-    line-height: 1.5rem;
-    color: #6b6868;
+/* hero section styling for introduction paragraph */
+.intro-text {
+  font-size: 24px;
 }
-
-.hero-profile{
-    display: inline-block;
+/* Profile photo styling */
+figure img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 2px solid #333;
 }
-
-.profile-photo{
-    width: 250px;
-    height: 250px;
-    border: 1px solid #6b6868;
-    border-radius: 50%;
-
+/* Call to Action button styling */
+button {
+  padding: 20px;
+  margin: 20px;
+  color: #ffffff;
+  background-color: #454545;
+  border-style: 1px solid #454545;
+  border-radius: 10px;
+  font-size: 18px;
 }
-
-.hero-section-data{
-    display: inline;
+/* Linkedin image styling in Call To Action button */
+.btn-action img {
+  width: 18px;
+  height: 18px;
 }
-.hero-section-data img {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
-}
-.section-data-text{
-    margin-right: 2px;
-}
-button{
-    margin-top: 15px;
-    padding: 10px;
-    background-color:#2980b9;
-    border:#2980b9;
-    border-radius: 15px;
-    color: #ffffff;
-    font-size: 1.1em;
-    cursor: pointer;
+/* button hover effects */
+.btn-action:hover {
+  background-color: #57adbf;
+  color: white;
 }
 
-button:hover{
-    background-color: #6b6868;
+/* HR STYLING */
+hr {
+  margin: auto;
+  margin-top: 20px;
+  width: 50%;
 }
-hr{
-    width: 80%;
-   margin: auto;
-   margin-top: 30px;
-    
- 
+/* --About Section-- */
+/* section title styling */
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 34px;
+}
+/* Changing color of section texts */
+.section-text {
+  color: hsl(0, 0%, 18%);
+}
+/* --Work Section-- */
+/* Employment details */
+.emp-text {
+  padding: 44px;
+  color: #57adbf;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.skills-container {
+  margin-bottom: 340px;
+}
+/* Sub section title */
+.sub-section-title {
+  margin-top: 24px;
+  padding: 10px;
+  font-size: 24px;
+}
+/* Skills list styling */
+.skills {
+  margin: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 4%;
+  padding: 5px;
+  width: 25%;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  float: right;
+}
+/* Sub skills title styling */
+.sub-skills {
+  font-weight: bold;
+}
+/* Hiding bullets in list items in skills section */
+.skills ul {
+  list-style: none;
+}
+.skills ul li {
+  padding-top: 10px;
+}
+/* --Project Section-- */
+.title-details {
+  margin-right: 200px;
+  font-weight: 200;
+  font-size: 18px;
+  color: #2d2d2d;
+  float: right;
+}
+/* Styling for project description text */
+.projects-details {
+  font-size: 16px;
+}
+/* Positioning and display styling of the projects container */
+.projects-container {
+  margin: 10px;
+  height: 410px;
+  padding-top: 10px;
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 5px 6px;
+}
+/* Project image sizes*/
+.projects-container img {
+  width: 300px;
+  height: 300px;
+}
+/* Technology icons styling */
+.software-icons img {
+  width: 50px;
+  height: 50px;
+}
+/* Removes bullet points form the technology icons */
+.software-icons {
+  list-style: none;
+}
+/* Italizes the Technology used text */
+.projects-details {
+  font-style: italic;
+}
+/* Project video size and position styling */
+.projects-container iframe {
+  margin-left: 48px;
+  width: 300px;
+  height: 200px;
+}
+/* Back to top navigation button styles */
+.back-to-top img {
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+/* --Contact Section-- */
+/* Form heading styles */
+.form-text {
+  font-size: 1.5rem;
+}
+/* Styling for textbox and text area */
+input,
+textarea {
+  margin-right: 10px;
+  width: 250px;
+  padding: 8px;
+  margin-bottom: 14px;
+  box-sizing: border-box;
+}
+/* Social media icons styles */
+.social-media-icons img {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+/* Social media icons alignment and effects */
+.social-media-icons li {
+  margin-right: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+/* Social media buttons styles on hover effect */
+.social-media-icons li:hover {
+  transform: scale(1.2);
 }
 
-.about-container,
-.work-container,
-.resume-container,
-.contact-container{
-    margin-top: 16px;
-   padding-top: 50px;
-}
-.about-me,
-.work,
-.my-resume{
-    display: inline;
-    font-size: 1.2em;
-}
-.about-me-title,
-.work-title,
-.resume-title,
-.contact-title
-{
-    margin: auto ;
-    margin-bottom: 20px;
-    font-size: 2em;
-    border: 2px solid #333; /* Border color (adjust as needed) */
-    padding: 10px; /* Adjust the padding as needed */
-    display: inline-block; /* Ensures the container only takes up as much width as necessary */
-
-    
-}
-
-.about-me img{
-    
-    float: left;
-    width: 200px;
-    height: 200px;
-}
-
-.about-me-text,
-.resume-text,
-.contact-text{
-    margin-top: 25px;
-}
-
-/*WORK SECTION */
-
-
-/* RESUME SECTION */
-
-
-/* CONTACT SECTION */
-form {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    width: 500px;
-    margin: auto;
-    margin-top: 10px;
-    background-color: lightgray;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 8px;
-  }
-  
-  input,
-  select,
-  textarea {
-    width: 300px;
-    padding: 10px; /* Adjust padding for spacing inside the elements */
-    margin-bottom: 16px; /* Add margin for spacing between elements */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  /* Hover and Focus States */
-  input:hover,
-  select:hover,
-  textarea:hover,
-  input:focus,
-  select:focus,
-  textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  /* Validation Styles */
-  input:invalid,
-  select:invalid,
-  textarea:invalid {
-    border-color: #dc3545;
-  }
-  
-
-
-/* FOOTER STYLES */
-footer{
-    padding: 20px;
-}
-
-.social-media-icons img{
-    padding-top: 15px;
-    width: 30px;
-    height: 30px;
+/* FOOTER */
+footer {
+  display: block;
+  margin-bottom: 5px;
+  padding: 20px;
+  background-color: #454545;
+  color: #ffffff;
 }

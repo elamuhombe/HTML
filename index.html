@@ -1,235 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-</head>
-<style>
-    @import url('https://fonts.cdnfonts.com/css/precious');
-</style>
-
-<body>
-    <!--header-section-->
-    <header>
-        <h1 class="logo">Elaine</h1>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#work">work</a></li>
-                <li><a href="#resume">resume</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>   
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="styles.css">
+      <style>
+         @import url('https://fonts.cdnfonts.com/css/precious');
+      </style>
+      </head>
+   <body>
+      <!-- HEADER SECTION -->
+      <!-- Logo and nav bar -->
+      <header>
+         <div class="logo-nav-bar">
+            <!-- logo -->
+            <p class="logo">Elaine Muhombe</p>
+            <!-- nav bar -->
+            <nav class="nav-bar">
+               <ul>
+                  <li class="active">home</li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#work">work</a></li>
+                  <li><a href="#projects">projects</a></li>
+                  <li><a href="#contact">contact</a></li>
+               </ul>
             </nav>
-    </header>
-    
-    <main>
-        <!--This is the hero section of the web page-->
-    <section id="hero-section">
-        <div class="hero-container">
-            <!--Welcome message and introduction-->
-            <h1>Hello, I am Elaine Muhombe </h1>
-            <p class="full-stack-text">A Full Stack JS Developer</p>
-            <p class="hero-tagline">Bringing Your Vision to Life, One Line of Code at a Time<br>
-                From concept to execution, I specialize in turning your web development dreams into 
-                reality with precision and creativity.
+         </div>
+      </header>
+      <!-- END OF HEADER SECTION -->
+
+      <!-- MAIN SECTION -->
+      <main>
+         <!-- Contains introductory details -->
+         <!-- About Section -->
+         <section id="hero">
+         <!-- Profile photo -->
+         <figure class="profile-photo"> 
+            <img src="./photos/elaine.jpg" alt="profile photo">
+         </figure>
+         <div class="hero-introductory">
+            <p class="greeting">
+               Hello, I am Elaine Muhombe
             </p>
-           
-            <div class="hero-profile">
-                <img src="./photos/elaine.jpg" alt="Elaine-Muhombe-Profile-Picture" class="profile-photo">
+            <p class="job-title">
+               IT Technician
+            </p>
+            <!-- Hero section introductory text -->
+            <p class="intro-text">
+               Bringing Your Vision to Life, One Line of Code at a Time.
+               <br>
+               From concept to execution
+            </p>
+          <!-- button -->
+               <a href="https://www.linkedin.com/in/elaine-muhombe-22727265/">
+                  <button class="btn-action"><img src="./photos/linkedin.png" 
+                     alt="linkedin icon">Connect with me</button>
+               </a>
+         </div>
+         </section>
+         <hr>
+         <!-- About Me Section -->
+         <section id="about">
+            <p class="section-title">
+               About Me
+            </p>
+            <p class="section-text">
+               I am an IT technician with over 7 years experience in the Education
+               industry and an aspiring full stack developer specializing in MERN stack.
+               <br>
+                  I am a graduate of Bachelor of Business and Information Technology degree from St Paul's University
+                  and I am currently based in Kisumu, Kenya.
+                  I also hold a certificate in Full-Stack JS development from GOMYCODE (Kenya).
+                  My hobbies include: watching movies, playing word games and cooking.
+            </p>
+         </section>
+         <!-- Work Section -->
+         <!-- Contains employment, skills and projects details -->
+         <section id="work">
+            <!-- Employment details -->
+            <div class="emp-container">
+               <p class="section-title">
+                  Employment Overview
+               </p>
+               <p><span class="emp-text">Job Title:</span> IT Technician</p>
+               <p><span class="emp-text">Employer:</span> Makini Schools Ltd</p>
+               <p><span class="emp-text">Experience:</span> 7 years+</p>
             </div>
-
-            <div class="hero-profile">
-                <div class="hero-section-data">
-                    <!--Icon and duration of professional experience-->
-                    <img src="./photos/work.svg" alt="professional-experience-icon">
-                        <p><span class="section-data-text"><em>Professional Experience:</em></span>7 years +</p>
-                </div>
-
-                <!--Skills data-->
-                <div class="hero-section-data">
-                    <!--Icon and list of skills-->
-                    <img src="./photos/skills.png" alt="skills-icon">
-                        <p><span class="section-data-text"><em>Skills:</em></span> MERN Stack</p>
-                </div>
-
-                <!--Portfolio highlights data-->
-                <div class="hero-section-data">
-                    <!--Icon and notable projects-->
-                    <img src="./photos/portfolio.svg" alt="portfolio-icon">
-                        <p><span class="section-data-text"><em>Projects:</em></span>
-                            Task scheduler, Real-time chat, and E-commerce app</p>
-                    </p>
-                </div>
-
-                <!--Education data-->
-                <div class="hero-section-data">
-                    <!--Icon and educational details-->
-                    <img src="./photos/education.svg" alt="education-icon">
-                        <p><span class="section-data-text"><em>Education:</em></span>
-                            Bachelors Degree</p>
-
-                </div>
-
+            <!-- Skills container -->
+            <div class="skills-container">
+               <p class="sub-section-title">
+                  Skills Overview
+               </p>
+            <!-- Skills overview -->
+            <div class="skills">
+               <p class="sub-skills">
+                  Technical Skills
+               </p>
+               <!-- Technical skills lists -->
+               <ul>
+                  <li>Troubeshooting of IT related devices</li>
+                  <li>Operating System</li>
+                  <li>Computer Networking</li>
+                  <li>User support</li>
+                  <li>Active directory management</li>
+                  <li>Cloud computing</li>
+                  <li>Software installation and configuration</li>
+               </ul>
             </div>
-               
+            <div class="skills">
+               <p class="sub-skills">
+                  Coding Skills
+               </p>
+               <!-- Coding skills lists -->
+               <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JS</li>
+                  <li>SCSS</li>
+                  <li>React.js</li>
+                  <li>Express.js</li>
+                  <li>Node.js</li><ul>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+               </ul>
             </div>
-            <button id="btn-about-connect" name="btn-connect">
-                Connect With Me
-            </button>
-            </section>
-
-            <hr>
-            <!--About Section-->
-            <section id="about">
-                <div class="about-container">
-                    <p class="about-me-title">About Me</p>
-
-                    
-                    
-    
-                       
-                       <p class="about-me-text">
-
-                        I am a Full Stack JS developer specialized in MEARN stack development based in Kisumu, Kenya.
-                        <br>
-                      
-                       I am a graduate of Bachelor of Business and Information Technology degree from St Paul's University.
-                        I also hold a certificate in Full-Stack JS development from GOMYCODE (Kenya).
-                       </p>
-                       <p class="about-me-text">
-                        My hobbies include: watching movies, playing word games and cooking.
-                       </p>
-                
-                    
-</div>
-                    
-                
-                </div>
-            </section>
-            <hr>
-            <!--work section-->
-            <div id="work-section">
-                <div class="work-container">
-                    <p class="work-title">Work Experience</p>
-                    <p class="work-experience-text">
-                       <p>IT Technician</p>
-                       <p>Makini Schools Ltd</p>
-                       <p class="date">September 2016 - Present</p>
-    <p>Responsibilities:</p>
-    <ul>
-        <li>Install, configure, and maintain computer hardware components such as desktops, laptops,
-             printers, and other peripherals.</li>
-             <li>Provide technical assistance to end-users or employees facing issues with hardware, 
-                software, networking, or other IT-related problems.</li>
-             <li>Install, upgrade, and configure operating systems and application software.</li>
-             <li>Assist in the setup, configuration, and maintenance of computer networks.</li>
-             <li>Keep track of IT assets, including hardware and software inventory.</li>
-             <li>Utilize remote desktop tools to troubleshoot and resolve issues.</li>
-
-    </ul>
-    
-                    </p>
-                    <ul>Hard Skills</ul>
-                    <li>Hardware</li>
-                    <li>Operating systems</li>
-                    <li>Technical support</li>
-                    <li>Networking</li>
-                    <li>Web development</li>
-                    <li>Cloud computing</li>
-                    <li>Software development tools</li>
-                
-                    <ul>Soft skills
-                        <li>Problem solving</li>
-                        <li>Teamwork</li>
-                        <li>Communication</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
+            <div class="skills">
+               <p class="sub-skills">
+                  Soft Skills
+               </p>
+               <!-- Soft skills lists -->
+               <ul>
+                  <li>Effective communication</li>
+                  <li>Collaboration</li>
+                  <li>Presentation</li>
+                  <li>Time management</li>
+                  <li>Conflict resolution</li>
+               </ul>
+   </div>
+      </div>
+         </section>
+         <!-- Projects section -->
+         <!-- Contains latest projects -->
+         <section id="projects">
+            <p class="section-title">
+               Latest Projects
+            </p>
+            <div class="projects-container">
+               <img src="./photos/task.png" alt="task sheduler icon">
+               <!--View code and live demo buttons-->
+               <button class="btn-action">View Code</button>
+               <button class="btn-action">Live Demo</button>
+               <div class="title-details">
+                  <p class="projects-title">01 Task Scheduler</p>
+               <br>
+               <p class="projects-details">Technologies used:</p>
+               <ul class="software-icons">
+               <li><img src="./photos/react.png" alt="react.js icon">React.js</li>
+               <li><img src="./photos/sass.png" alt="sass icon">Saas</li>
+               </ul>
+         </div>
             </div>
-
-            <hr>
-
-            <!--resume section-->
-            <div id="resume-section">
-                <div class="resume-container">
-                    <p class="resume-title">My Resume</p>
-                    <div class="my-resume">
-                        <p class="resume-text">
-                            I am a dedicated Full Stack JS Developer with a passion for creating innovative web solutions. 
-                            Proficient in a variety of technologies,
-                            I am always eager to learn and adapt to new challenges to stay at the forefront of the web 
-                            development industry.
-                        </p>
-                        <p class="resume-text">
-                            Below are buttons to view and download my resume.
-                        </p>
-                        
-                            <button id="btn-view-resume" >View Resume</button>
-                            <a href="/images/myw3schoolsimage.jpg" download>
-                        <button id="btn-download-resume"  href="./photos/check.png">Download Resume</button></a>
-                       
-                        
-
-                    </div>
-                    
-                </div>
+            <div class="projects-container">
+               <img src="./photos/shopping-cart.png" alt="shopping cart icon">
+               <!--View code and live demo buttons-->
+                  <button class="btn-action">View Code</button>
+                  <button class="btn-action">Live Demo</button>
+               <div class="title-details">
+                  <p class="projects-title">02 Shopping Cart</p>
+               <br>
+               <p class="projects-details">Technologies used:</p>
+               <ul class="software-icons">
+                  <li><img src="./photos/react.png" alt="react.js icon">React.js</li>
+                  <li><img src="./photos/sass.png" alt="sass icon">Saas framework</li>
+                  <li><img src="./photos/express.png" alt="express.js icon">Express.js</li>
+                  <li><img src="./photos/mongo.jpg" alt="MongoDB icon">MongoDB</li>
+                  <li><img src="./photos/node.png" alt="node.js icon">Node.js</li>
+            </ul>
             </div>
-            <hr>
-
-            <!--contact section-->
-            <div id="contact-section">
-                <div class="contact-container">
-                    <p class="contact-title">Contacts</p>
-                    <p class="contact-text">Please fill the contact form below to reach me.</p>
-                    <!-- Contact Form -->
-          <form id="contact-form" class="contact-form">
-            <div>
-                <label for="firstName">Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="e.g Gloria Musau"required>
+               </div>
+            <div class="projects-container">
+               <iframe width="650" height="420" src="https://www.youtube.com/embed/bSbHeUrUPwQ"
+                        title="Modern React Chat App Full Course - Part 1 | Build &amp; Deploy Real World Application"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+               <div class="title-details">
+                  <p class="projects-title">03 Real Time Chat App</p>
+                  <br>
+                  <p class="projects-details">Technologies used:</p>
+                  <ul class="software-icons">
+                     <li><img src="./photos/react.png" alt="react.js icon">React.js</li>
+                     <li><img src="./photos/sass.png" alt="sass icon">Saas</li>
+                     <li><img src="./photos/express.png" alt="express.js icon">Express.js</li>
+                     <li><img src="./photos/node.png" alt="node.js icon">Node.js</li>
+                  </ul>
+               </div>
+               <!--View code and live demo buttons-->
+                  <button class="btn-action">View Code</button>
+                  <button class="btn-action">Live Demo</button>
             </div>
-            
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="e.g mailto@gmail.com" required>
-            </div>
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" placeholder="type your message"required></textarea>
-            </div>
-            <!-- Submit Button -->
-            <button type="submit">Send Message</button>
+         <hr>
+         </section>
+         <!-- Resume Section -->
+         <!-- Contains summary of my career profile and access to view or download my resume -->
+         <section id="resume">
+            <!-- Resume title -->
+            <p class="section-title">
+               My Resume
+            </p>
+            <!-- Resume career profile -->
+            <p class="section-text">
+               I am a dedicated Full Stack JS Developer with a passion for creating innovative web solutions.
+               Proficient in a variety of technologies,
+               I am always eager to learn and adapt to new challenges to stay at the forefront of the web
+               development industry.
+               Below are buttons to view and download my resume.
+            </p>
+            <!-- Button to view resume -->
+            <a href="./resume.pdf">
+               <button class="btn-action">View my resume</button>
+               </a>
+            <!-- Button to download resume -->
+            <a href="./resume.pdf" download>
+               <button class="btn-action">Download resume</button>
+            </a>
+         <hr>
+         </section>
+         <!-- Contact Section -->
+         <!-- Consists of contact form and social media buttons for communication -->
+         <section id="contact">
+            <p class="section-title">Contact Details</p>
+            <p class="form-text">Please Fill out the form below:</p>
+            <form id="contact-form" class="contact-form">
+               <div>
+                  <label for="Name">Name:</label>
+                  <input type="text" id="name" name="Name" placeholder="e.g Gloria Musau"required>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="e.g mailto@gmail.com" required>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="3" placeholder="type your message"required></textarea>
+               </div>
+               <!-- Submit Button -->
+               <a href="mailto:emuhombe@gmail.com">
+               <button type="submit" class="btn-action">Send Message</button>
+               </a>
             </form>
-                </div>
-            
-            </main>
-
-
-<div class="back-to-top-arrow">
-   
-</div>
-            <!-- Footer Section -->
-      <footer>
-        &copy; 2023 by Elaine Muhombe
-        <div class="social-media-icons">
-            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" title="Gmail"><img src="./photos/gmail.svg" alt="Watsapp"></a>
-      
-            <a href="https://www.linkedin.com/in/yourpage" target="_blank" title="Watsapp"><img src="./photos/watsapp.png" alt="Watsapp"></a>
-            <a href="https://www.instagram.com/elainemuhombe/" target="_blank" title="Instagram"><img src="./photos/instagram.svg" alt="Instagram"></a>
-            <a href="https://twitter.com/emuhombe" target="_blank" title="Twitter"><img src="./photos/twitter.svg" alt="Twitter"></a>
-            <a href="https://www.linkedin.com/in/elaine-muhombe-22727265/" target="_blank" title="LinkedIn"><img src="./photos/linkedin.svg" alt="LinkedIn"></a>
-            
-   
-        </div>
-    </footer>
-            </body>
-            </html>
-
-
-                    
-                
+            <!-- Social media icons -->
+            <ul class="social-media-icons">
+               <li>
+                  <a href="https://wa.me/254701217788" target="_blank">
+                  <img src="./photos/watsapp.png" alt="WhatsApp-icon" title="Whatsapp"> </a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/elainemuhombe/" target="_blank" title="Instagram">
+                  <img src="./photos/instagram.svg" alt="Instagram"></a>
+               </li>
+               <li>
+                  <a href="https://twitter.com/emuhombe" target="_blank" title="Twitter">
+                  <img src="./photos/twitter.svg" alt="Twitter"></a>
+               </li>
+               <li>
+                  <a href="https://www.linkedin.com/in/elaine-muhombe-22727265/" target="_blank" title="LinkedIn">
+                     <img src="./photos/linkedin.svg" alt="LinkedIn"></a>
+               </li>
+            </ul>
+         <hr>
+         </section>
+         <!-- Back To Top Arrow -->
+         <div class="back-to-top">
+            <a href="#hero">
+               <img src="./photos/top-arrow.png" alt="back to top arrow"
+               title="back to top">
+            </a>
+         </div>
+         <!-- FOOTER SECTION -->
+         <!-- Contains copyright information -->
+         <footer>
+            <p>&copy Elaine Muhombe</p>
+         </footer>
+      </main>
+   </body>
+   </html>
